@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+    <style>
+        div{
+            height:2000px;
+        }
+        img {
+            max-width: 100px;
+            margin:0;
+            bottom:0;
+            right:0;
+            position:fixed ;
+
+        }
+    </style>
+</head>
+<body>
+    <div>
+        <span>zheshidingbu</span>
+        <img id="img2" src="小火箭2.png " alt="">
+        <img id="img1" src="小火箭1.png " alt="">
+
+    </div>
+
+    <script>
+        var Otop1=document.getElementById ('img1');
+        var Otop2=document.getElementById ('img2');
+        Otop1.width  .style=100px;
+        Otop1.onmouseup =function(){
+            Otop1 .style.display=none;
+        }
+        Otop2.onclick=function(){
+            var top=document .documentElement .scrollTo ;
+            scrollTo (0,0);
+        }
+    </script>
+</body>
+</html>
