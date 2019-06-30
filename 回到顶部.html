@@ -28,11 +28,17 @@
     <script>
         var Otop1=document.getElementById ('img1');
         var Otop2=document.getElementById ('img2');
-        Otop1.width  .style=100px;
+        // Otop1.onmouseover =function(){
+        //     Otop2.style.zIndex =1;
+        // }
         Otop1.onmouseup =function(){
-            Otop1 .style.display=none;
+            Otop2.style.zIndex =1;
         }
-        Otop2.onclick=function(){
+        Otop1.onmouseleave =function(){
+            Otop2.style.zIndex =-1;
+        }
+        Otop1.onclick=function(){
+            console .log('111');
             var top=document .documentElement .scrollTo ;
             scrollTo (0,0);
         }
